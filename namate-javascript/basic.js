@@ -1,9 +1,11 @@
 
-
-var a = function () {
-return function xyz(){
-
+function attachEventListner(){
+let count = 0;
+document.getElementById("click me").addEventListener("click",
+function xyz(){
+    console.log("button click times", ++count);
+})
 }
-}
-console.log(a());
+attachEventListner();
+
 

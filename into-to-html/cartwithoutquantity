@@ -64,13 +64,6 @@
                   <th class="medium-hide large-up-hide right caption-with-letter-spacing" colspan="1" scope="col">
                     {{ 'sections.cart.headings.total' | t }}
                   </th>
-                  <th
-                    class="cart-items__heading--wide cart-items__heading--quantity small-hide caption-with-letter-spacing"
-                    colspan="1"
-                    scope="col"
-                  >
-                    {{ 'sections.cart.headings.quantity' | t }}
-                  </th>
                   <th class="small-hide right caption-with-letter-spacing" colspan="1" scope="col">
                     {{ 'sections.cart.headings.total' | t }}
                   </th>
@@ -238,23 +231,6 @@
                         assign has_vol_pricing = true
                       endif
                     -%}
-                    <td class="cart-item__quantity">
-                      <div class="cart-item__quantity-wrapper">
-                        <cart-remove-button
-                          id="Remove-{{ item.index | plus: 1 }}"
-                          data-index="{{ item.index | plus: 1 }}"
-                        >
-                          <a
-                            href="{{ item.url_to_remove }}"
-                            class="button button--tertiary"
-                            aria-label="{{ 'sections.cart.remove_item' | t: title: item.title }}"
-                          >
-                            {{ 'icon-remove.svg' | inline_asset_content }}
-                          </a>
-                        </cart-remove-button>
-                      </div>
-                      <div id="Cart-item-error-{{ item.index | plus: 1 }}" class="cart-item__error-text" role="alert"></div>
-                    </td>
 
                     <td class="cart-item__totals right small-hide">
                       {%- render 'loading-spinner' -%}
