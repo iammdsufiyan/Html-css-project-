@@ -11,7 +11,7 @@ const circumference   =   function (radius){
     return Math.PI*2*radius;
 }
 
-const Daimeter = function(radius){
+const Daimeters = function(radius){
     return 2*radius;
 }
 
