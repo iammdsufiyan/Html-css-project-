@@ -21,20 +21,7 @@ const cart = ["shirt", "pant" , "kurta"];
 // })
 
 
-function createOrder(cart){
-const pr = new Promise(function(resolve,reject){
-    if(!validateCart(cart)){
-        const err = new Error("cart is not validated ");
-        reject(err);
-    }
-    const orderID = '12345'
-    setTimeout(function(){
-          resolve(orderID);
-    },100);
-    
-})
-return pr;
-}
+
 
 function ProcedeToPayment(orderID){
   return new Promise(function(resolve,reject){
