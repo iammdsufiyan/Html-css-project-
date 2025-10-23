@@ -1,0 +1,50 @@
+.video-title{
+    font-weight: bold;
+    font-family: Arial;
+    font-size: large;
+    width: 300px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+.views{
+    font-family: Arial;
+     color: rgba(0, 0, 0, 0.691);
+   
+    font-size: 14px;
+}
+
+.author{
+     font-family: Arial;
+    color: rgba(0, 0, 0, 0.691);
+    
+    font-size: 14px;
+}
+
+.description{
+  
+    width: 290px;
+      font-family: Arial;
+    color: rgba(0, 0, 0, 0.691);
+    
+    font-size: 14px;
+   
+}
+
+.shop{
+    font-weight: lighter;
+  
+    color: rgb(234, 225, 225);
+  
+    background-color: rgb(237, 45, 45);
+  
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 14px;    
+}
+.shop-now{
+    cursor: pointer;
+}
+.shop-now:hover{
+    text-decoration: underline;
+}
