@@ -3,31 +3,8 @@
 
       \
           
-          {%- if form.errors contains 'email' -%}
-            <small class="contact__field-error" id="ContactForm-email-error">
-              <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
-              <span class="form__message">
-                <span class="svg-wrapper">
-                  {{- 'icon-error.svg' | inline_asset_content -}}
-                </span>
-                {{- form.errors.translated_fields.email | capitalize }}
-                {{ form.errors.messages.email -}}
-              </span>
-            </small>
-          {%- endif -%}
-        </div>
-      </div>
-      <div class="field">
-        <input
-          type="text"
-          id="ContactForm-company"
-          class="field__input"
-          autocomplete="organization"
-          name="contact[company]"
-          placeholder="Company / Organization"
-        >
-        <label class="field__label" for="ContactForm-company">Company / Organization</label>
-      </div>
+        
+     <div > 
       <div class="field">
         <input
           type="tel"
