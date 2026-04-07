@@ -14,19 +14,19 @@ dataP.then((res)=>{
         console.log(res)
 })
 
-// const pr  = new Promise((resolve, rejecte)=>{
-//     resolve("Promis is resolved");
-// })
+const pro = new Promise((resolve, rejecte)=>{
+    resolve("Promis is resolved");
+})
 
 
-// async function getdata(){
-//     return pr;
-// }
+async function getdata(){
+    return pro;
+}
 
 
-// const datap = getdata();
+const datap = getdata();
 
 
-// datap.then((res)=>{
-//     console.log(res);
-// })
+datap.then((res)=>{
+    console.log(res);
+})
